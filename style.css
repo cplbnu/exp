@@ -1,0 +1,121 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.background-container {
+    background-image: url('image/桌面1.png');
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 80vh;
+    position: relative;
+}
+
+
+.overlay {
+    position: absolute;
+ }
+
+#overlay1 {
+    top: 0%;
+    left: 38%;
+}
+
+#overlay2 {
+    top: 19%;
+    left: 60%;
+}
+
+#overlay3 {
+    top: 8%;
+    left: 11%;
+}
+
+#overlay4 {
+    top: 25%;
+    left: 39%;
+}
+
+#overlay5 {
+    top: 28%;
+    left: 20%;
+}
+
+#overlay6 {
+    top: 47%;
+    left: 35%;
+}
+
+#overlay7 {
+    top: 53%;
+    left: 38%;
+}
+
+#overlay8 {
+    top: 47%;
+    left: 46%;
+}
+
+#overlay9 {
+    top: 36%;
+    left: 37%;
+}
+
+#overlay10 {
+    top: 20%;
+    left: 75%;
+}
+
+#overlay11 {
+    top: 43%;
+    left: 43%;
+}
+
+#overlay12 {
+    top: 43%;
+    left: 21%;
+}
+
+#overlay13 {
+    top: 18%;
+    left: 67%;
+}
+
+#overlay14 {
+    top: 29%;
+    left: 59%;
+}
+
+#overlay15 {
+    top: 28%;
+    left: 30%;
+}
+
+#overlay16 {
+    top: 40%;
+    left: 30%;
+}
+
+#overlay17 {
+    top: 60%;
+    left: 23%;
+}
+
+#overlay18 {
+    top: 30%;
+    left: 55%;
+}
+
+#overlay19 {
+    top: 15%;
+    left: 31%;
+}
+
+#overlay20 {
+    top: 30%;
+    left: 64%;
+}
