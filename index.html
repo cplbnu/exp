@@ -1,28 +1,56 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>桌面整理</title>
-    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        h1{
+       text-align: center;
+     }  
+</style>
+    <style>.hidden {
+        display: none;
+    }
+    </style>
+   
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>你的新办公桌</h1>
-    <div class="image-container">
-        <img style="display: grid;place-items: center;" src="image/桌子.jpeg" alt="桌子" width="600" height="400" class="main-image">
-        <div class="sticker" id="sticker1" style="top: 50px; left: 100px;">🟩</div>
-        <div class="sticker" id="sticker2" style="top: 150px; left: 200px;">🟦</div>
-        <div class="sticker" id="sticker3" style="top: 250px; left: 300px;">🟥</div>
+  
+    <h3>现在你可以点击物品整理你的新公桌，单击物品使其消失，如操作失误，再次刷新页面，所有物品出现</h3>
+    <style type="text/css">
+        h3{
+       text-align: center;
+     }  
+</style>
+    <div class="background-container">
+        <div class="overlay-images">
+            <img src="image/显示器.png" alt="IM Image 1" width="250" class="overlay" id="overlay1">         
+            <img src="image/排插1.png" alt="IM Image 2" width="100" class="overlay" id="overlay2">
+            <img src="image/耳机.png" alt="IM Image 3" width="100" class="overlay" id="overlay3">
+            <img src="image/键盘.png" alt="IM Image 4" width="220" class="overlay" id="overlay4">
+            <img src="image/桌面储物盒.png" alt="IM Image 5" width="100" class="overlay" id="overlay5">
+            <img src="image/三角尺1.png" alt="RE Image 1" width="60" class="overlay" id="overlay6">
+            <img src="image/三角尺2.png" alt="RE Image 2" width="60" class="overlay" id="overlay7">
+            <img src="image/笔1.png" alt="RE Image 3" width="50" class="overlay" id="overlay8">
+            <img src="image/笔2.png" alt="RE Image 4" width="50" class="overlay" id="overlay9">
+            <img src="image/便利贴3.png" alt="RE Image 5" width="80" class="overlay" id="overlay10">
+            <img src="image/便利贴2.png" alt="RE Image 6" width="60" class="overlay" id="overlay11">
+            <img src="image/计算器1.png" alt="RE Image 7" width="100" class="overlay" id="overlay12">
+            <img src="image/计算器2.png" alt="RE Image 8" width="100" class="overlay" id="overlay13">
+            <img src="image/马克杯1.png" alt="RE Image 9" width="60" class="overlay" id="overlay14">
+            <img src="image/马克杯2.png" alt="RE Image 10" width="60" class="overlay" id="overlay15">
+            <img src="image/喝完的饮料瓶.png" alt="UN Image 1" width="80" class="overlay" id="overlay16">
+            <img src="image/不要的包装袋.png" alt="UN Image 2" width="140" class="overlay" id="overlay17">
+            <img src="image/废纸3.png" alt="UN Image 3" width="40" class="overlay" id="overlay18">
+            <img src="image/枯萎盆栽.png" alt="UN Image 4" width="140" class="overlay" id="overlay19">
+            <img src="image/纸团1.png" alt="UN Image 5" width="80" class="overlay" id="overlay20">
+            <script src="script.js"> </script>
+        </div>
     </div>
-    <script src="script.js"></script>
+        
 </body>
 </html>
 
-.overlay-images {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-max-width: 100px; /* Adjust as needed */
