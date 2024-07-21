@@ -12,6 +12,47 @@
     <style>.hidden {
         display: none;
     }
+    body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .titles {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .titles h1, .titles h2 {
+            margin: 10px 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            flex: 1 1 calc(33.333% - 20px);
+        }
+        /* 媒体查询：屏幕宽度小于768px时，每行显示两张图片 */
+        @media (max-width: 768px) {
+            .gallery img {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        /* 媒体查询：屏幕宽度小于480px时，每行显示一张图片 */
+        @media (max-width: 480px) {
+            .gallery img {
+                flex: 1 1 100%;
+            }
+        }
     </style>
    
     <link rel="stylesheet" href="style.css">
