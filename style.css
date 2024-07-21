@@ -1,10 +1,20 @@
-/* styles.css */
-body, html {
+/* 重置样式 */
+body, h1, h3, img {
     margin: 0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* 容器设置 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 .background-container {
     background-image: url('image/桌面1.png');
@@ -15,6 +25,15 @@ body, html {
     position: relative;
 }
 
+/* 标题设置 */
+.titles {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titles h1, .titles h3 {
+    margin: 10px 0;
+}
 
 .overlay {
     position: absolute;
@@ -76,8 +95,8 @@ body, html {
 }
 
 #overlay12 {
-    top: 44%;
-    left: 22%;
+    top: 46%;
+    left: 21%;
 }
 
 #overlay13 {
@@ -91,18 +110,18 @@ body, html {
 }
 
 #overlay15 {
-    top: 29%;
+    top: 28%;
     left: 30%;
 }
 
 #overlay16 {
-    top: 46%;
+    top: 44%;
     left: 29%;
 }
 
 #overlay17 {
-    top: 59%;
-    left: 18%;
+    top: 58%;
+    left: 21%;
 }
 
 #overlay18 {
@@ -118,4 +137,19 @@ body, html {
 #overlay20 {
     top: 30%;
     left: 64%;
+}
+
+
+
+/* 媒体查询：调整图片布局在不同屏幕尺寸下的一致性 */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
 }
