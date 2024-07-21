@@ -56,94 +56,147 @@ body {
 }
 
 #overlay3 {
-    top: 8%;
-    left: 11%;
+    top: 2vw;
+    left: 9vw;
+    width: 10%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 10%; /* 确保图片不会超过父容器 */
 }
 
 #overlay4 {
-    top: 25%;
-    left: 39%;
+    top: 10vw;
+    left: 33vw;
+    width: 17%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 17%; /* 确保图片不会超过父容器 */
 }
 
 #overlay5 {
-    top: 28%;
-    left: 20%;
+    top: 10vw;
+    left: 18vw;
+    width: 10%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 10%; /* 确保图片不会超过父容器 */
 }
 
 #overlay6 {
-    top: 47%;
-    left: 35%;
+    top: 17vw;
+    left: 29vw;
+    width: 6%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 6%; /* 确保图片不会超过父容器 */
 }
 
 #overlay7 {
-    top: 53%;
-    left: 38%;
+    top: 12vw;
+    left:25vw;
+    width: 4%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 4%; /* 确保图片不会超过父容器 */
 }
 
 #overlay8 {
-    top: 47%;
-    left: 46%;
+    top: 16vw;
+    left: 41vw;
+    width: 4%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 4%; /* 确保图片不会超过父容器 */
 }
 
 #overlay9 {
-    top: 36%;
-    left: 37%;
+    top: 14vw;
+    left: 26vw;
+    width: 7%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 7%; /* 确保图片不会超过父容器 */
 }
 
 #overlay10 {
-    top: 20%;
-    left: 75%;
+    top: 16vw;
+    left: 15vw;
+    width: 8%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 8%; /* 确保图片不会超过父容器 */
 }
 
 #overlay11 {
-    top: 43%;
-    left: 43%;
+    top: 15vw;
+    left: 31vw;
+    width: 5%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 5%; /* 确保图片不会超过父容器 */
 }
 
 #overlay12 {
-    top: 46%;
-    left: 21%;
+    top: 18vw;
+    left: 21vw;
+    width: 10%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 10%; /* 确保图片不会超过父容器 */
 }
 
 #overlay13 {
-    top: 18%;
-    left: 67%;
+    top: 7vw;
+    left: 54vw;
+    width: 8%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 8%; /* 确保图片不会超过父容器 */
 }
 
 #overlay14 {
-    top: 29%;
-    left: 59%;
+    top: 15vw;
+    left: 34vw;
+    width: 9%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 9%; /* 确保图片不会超过父容器 */
 }
 
 #overlay15 {
-    top: 28%;
-    left: 30%;
+    top: 21vw;
+    left: 14vw;
+    width: 10%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 10%; /* 确保图片不会超过父容器 */
 }
 
 #overlay16 {
-    top: 44%;
-    left: 29%;
+    top: 4vw;
+    left: 60vw;
+    width: 8%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 8%; /* 确保图片不会超过父容器 */
 }
 
 #overlay17 {
-    top: 58%;
-    left: 21%;
+    top: 11vw;
+    left: 43vw;
+    width: 13%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 13%; /* 确保图片不会超过父容器 */
 }
 
 #overlay18 {
-    top: 30%;
-    left: 55%;
+    top: 21vw;
+    left: 28vw;
+    width: 8%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 8%; /* 确保图片不会超过父容器 */
 }
 
 #overlay19 {
-    top: 15%;
-    left: 31%;
+    top: 5vw;
+    left: 22vw;
+    width: 18%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 18%; /* 确保图片不会超过父容器 */
 }
 
 #overlay20 {
-    top: 30%;
-    left: 64%;
+    top: 15vw;
+    left: 44vw;
+    width: 5%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 5%; /* 确保图片不会超过父容器 */
 }
-
 
 
