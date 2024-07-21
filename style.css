@@ -42,11 +42,17 @@ body {
 #overlay1 {
     top: 0vw;
     left: 30vw;
+    width: 25%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 100%; /* 确保图片不会超过父容器 */
 }
 
 #overlay2 {
     top: 19vw;
     left: 60vw;
+    width: 25%; /* 图片宽度占据父容器的100% */
+    height: auto; /* 高度自动调整，保持图片比例 */
+    max-width: 100%; /* 确保图片不会超过父容器 */
 }
 
 #overlay3 {
@@ -141,15 +147,3 @@ body {
 
 
 
-/* 媒体查询：调整图片布局在不同屏幕尺寸下的一致性 */
-@media (max-width: 768px) {
-    .overlay {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-}
-
-@media (max-width: 480px) {
-    .overlay {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    }
-}
