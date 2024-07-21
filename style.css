@@ -44,15 +44,15 @@ body {
     left: 30vw;
     width: 25%; /* 图片宽度占据父容器的100% */
     height: auto; /* 高度自动调整，保持图片比例 */
-    max-width: 100%; /* 确保图片不会超过父容器 */
+    max-width: 25%; /* 确保图片不会超过父容器 */
 }
 
 #overlay2 {
-    top: 19vw;
-    left: 60vw;
-    width: 25%; /* 图片宽度占据父容器的100% */
+    top: 7vw;
+    left: 47vw;
+    width: 10%; /* 图片宽度占据父容器的100% */
     height: auto; /* 高度自动调整，保持图片比例 */
-    max-width: 100%; /* 确保图片不会超过父容器 */
+    max-width: 10%; /* 确保图片不会超过父容器 */
 }
 
 #overlay3 {
