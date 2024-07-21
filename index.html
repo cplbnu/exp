@@ -46,10 +46,15 @@
             <img src="image/废纸3.png" alt="UN Image 3" class="overlay" id="overlay18">
             <img src="image/枯萎盆栽.png" alt="UN Image 4" class="overlay" id="overlay19">
             <img src="image/纸团1.png" alt="UN Image 5" class="overlay" id="overlay20">
-            <script src="script.js"> </script>
         </div>
     </div>
-        
+    <script>
+        document.querySelectorAll('.overlay').forEach(function(img) {
+            img.addEventListener('click', function() {
+                this.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>
 
