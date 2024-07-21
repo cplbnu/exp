@@ -20,9 +20,9 @@ body {
     background-image: url('image/桌面1.png');
     background-size: cover;
     background-position: center;
-    width: 80vw;
+    width: 80%;
     height: 80vh;
-    position: absolute;
+    position: relative;
 }
 
 /* 标题设置 */
@@ -89,8 +89,8 @@ body {
 }
 
 #overlay7 {
-    top: 12vw;
-    left:25vw;
+    top: 24vw;
+    left: 26vw;
     width: 4%; /* 图片宽度占据父容器的100% */
     height: auto; /* 高度自动调整，保持图片比例 */
     max-width: 4%; /* 确保图片不会超过父容器 */
@@ -105,11 +105,11 @@ body {
 }
 
 #overlay9 {
-    top: 14vw;
-    left: 26vw;
-    width: 7%; /* 图片宽度占据父容器的100% */
+    top: 12vw;
+    left: 25vw;
+    width: 6%; /* 图片宽度占据父容器的100% */
     height: auto; /* 高度自动调整，保持图片比例 */
-    max-width: 7%; /* 确保图片不会超过父容器 */
+    max-width: 6%; /* 确保图片不会超过父容器 */
 }
 
 #overlay10 {
@@ -121,15 +121,15 @@ body {
 }
 
 #overlay11 {
-    top: 15vw;
-    left: 31vw;
+    top: 13vw;
+    left: 30vw;
     width: 5%; /* 图片宽度占据父容器的100% */
     height: auto; /* 高度自动调整，保持图片比例 */
     max-width: 5%; /* 确保图片不会超过父容器 */
 }
 
 #overlay12 {
-    top: 18vw;
+    top: 17vw;
     left: 21vw;
     width: 10%; /* 图片宽度占据父容器的100% */
     height: auto; /* 高度自动调整，保持图片比例 */
@@ -185,7 +185,7 @@ body {
 }
 
 #overlay19 {
-    top: 5vw;
+    top: 3vw;
     left: 22vw;
     width: 18%; /* 图片宽度占据父容器的100% */
     height: auto; /* 高度自动调整，保持图片比例 */
