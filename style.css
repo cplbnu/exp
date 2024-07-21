@@ -143,13 +143,13 @@ body {
 
 /* 媒体查询：调整图片布局在不同屏幕尺寸下的一致性 */
 @media (max-width: 768px) {
-    .gallery {
+    .overlay {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 }
 
 @media (max-width: 480px) {
-    .gallery {
+    .overlay {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
 }
