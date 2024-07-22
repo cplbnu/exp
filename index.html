@@ -12,6 +12,20 @@
     <style>.hidden {
         display: none;
     }
+    #overlay-images {
+            width: 100vw;
+            height: 100vh;
+            border: 1px solid #ccc;
+            position: relative;
+            overflow: hidden;
+        }
+        .overlay {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            cursor: move;
+            user-select: none; /* Prevent text selection during drag */
+        }
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -49,11 +63,39 @@
         </div>
     </div>
     <script>
-        document.querySelectorAll('.overlay').forEach(function(img) {
-            img.addEventListener('click', function() {
-                this.style.display = 'none';
-            });
-        });
+        let selectedImg = null;
+        let offsetX = 0;
+    let offsetY = 0;
+    let isDragging = false;
+    const images = document.querySelectorAll('.overlay');
+
+images.forEach(image => {
+    image.addEventListener('mousedown', function(e) {
+        if (!isDragging) {
+            selectedImage = e.target;
+            offsetX = e.clientX - selectedImage.offsetLeft;
+            offsetY = e.clientY - selectedImage.offsetTop;
+            isDragging = true;
+        } else {
+            isDragging = false;
+        }
+    });
+
+    image.addEventListener('dblclick', function(e) {
+        e.target.style.display = 'none';
+    });
+});
+
+document.addEventListener('mousemove', function(e) {
+    if (isDragging && selectedImage) {
+        selectedImage.style.left = (e.clientX - offsetX) + 'px';
+        selectedImage.style.top = (e.clientY - offsetY) + 'px';
+    }
+});
+
+document.addEventListener('mouseup', function() {
+    isDragging = false;
+});
     </script>
 </body>
 </html>
