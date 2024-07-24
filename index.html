@@ -12,28 +12,14 @@
     <style>.hidden {
         display: none;
     }
-    #overlay-images {
-            width: 100vw;
-            height: 100vh;
-            border: 1px solid #ccc;
-            position: relative;
-            overflow: hidden;
-        }
-        .overlay {
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            cursor: move;
-            user-select: none; /* Prevent text selection during drag */
-        }
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>你的新办公桌</h1>
   
-    <h3>现在你可以点击物品整理你的新公桌，单击并拖拽物品可以使物品移动到指定地点，双击物品可以使其消失。<h3>
-        <h3>如操作失误，再次刷新页面，所有物品出现</h3>
+    <h3>这是你在哈维集团的工位，每天你的工作都是在这张办公桌上进行。</h3>
+    <h3>现在你可以点击物品整理你的公桌，单击物品使其消失，如操作失误，再次刷新页面，所有物品出现</h3>
     <style type="text/css">
         h3{
        text-align: center;
@@ -64,39 +50,11 @@
         </div>
     </div>
     <script>
-        let selectedImg = null;
-        let offsetX = 0;
-    let offsetY = 0;
-    let isDragging = false;
-    const images = document.querySelectorAll('.overlay');
-
-images.forEach(image => {
-    image.addEventListener('mousedown', function(e) {
-        if (!isDragging) {
-            selectedImage = e.target;
-            offsetX = e.clientX - selectedImage.offsetLeft;
-            offsetY = e.clientY - selectedImage.offsetTop;
-            isDragging = true;
-        } else {
-            isDragging = false;
-        }
-    });
-
-    image.addEventListener('dblclick', function(e) {
-        e.target.style.display = 'none';
-    });
-});
-
-document.addEventListener('mousemove', function(e) {
-    if (isDragging && selectedImage) {
-        selectedImage.style.left = (e.clientX - offsetX) + 'px';
-        selectedImage.style.top = (e.clientY - offsetY) + 'px';
-    }
-});
-
-document.addEventListener('mouseup', function() {
-    isDragging = false;
-});
+    document.querySelectorAll('.overlay').forEach(function(img) {
+            img.addEventListener('click', function() {
+                this.style.display = 'none';
+            });
+        });
     </script>
 </body>
 </html>
